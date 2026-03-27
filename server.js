@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const { createClient } = require("@supabase/supabase-js");
@@ -8,9 +9,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ Supabase config (YOUR KEYS ADDED)
-const supabaseUrl = "https://nxzqmccfzfkkmqosipia.supabase.co";
-const supabaseKey = "sb_publishable_9olFveEy58qeJNKcXj0Z4A_n7Lmwi3k";
+// ✅ Supabase config (using environment variables)
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+  console.error("❌ Missing SUPABASE_URL or SUPABASE_KEY environment variables");
+  process.exit(1);
+}
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
