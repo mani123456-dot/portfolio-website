@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mani Kumari | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Mani Kumari</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-container">
+    <img src="assets/profile.jpg" alt="Profile" class="profile-img">
+
+    <div>
+      <h2>Hi, I'm Mani Kumari 👋</h2>
+      <p>Data Science Student | ML | Cybersecurity</p>
+
+      <div class="buttons">
+        <button onclick="scrollToProjects()">View Projects</button>
+        <a href="#" class="btn-outline">Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate Data Science student focused on solving real-world problems 
+    using Machine Learning, Data Analytics, and Cybersecurity.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="card">
+      <h3>💰 Finance Tracker</h3>
+      <p>Track income and visualize expenses with charts.</p>
+      <div class="card-btns">
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>📊 Sales Prediction</h3>
+      <p>ML model predicting future sales trends.</p>
+      <div class="card-btns">
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🔐 Cybersecurity Dashboard</h3>
+      <p>Threat analysis and security visualization.</p>
+      <div class="card-btns">
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <p>Python</p>
+    <div class="bar"><div style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>Machine Learning</p>
+    <div class="bar"><div style="width:80%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><div style="width:75%"></div></div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: yourmail@email.com</p>
+  <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  <p>GitHub: github.com/yourusername</p>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="status"></p>
+</section>
+<footer>
+  <p>© 2026 Mani Kumari</p>
+</footer>
+
+</body>
+</html>
